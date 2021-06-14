@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:padding="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_category_salary"
+                    android:id="@+id/icGroup"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Tien tiet kiem"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tvGroupName"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/icGroup"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="500000"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:id="@+id/tvAmount"/>
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

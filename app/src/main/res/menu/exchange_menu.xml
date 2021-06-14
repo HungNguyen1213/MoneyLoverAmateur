@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/navNotification"
+        android:title="Thông báo"
+        android:icon="@drawable/ic_bk_notification"
+        app:showAsAction="always"/>
+    <item android:id="@+id/navEvent"
+        android:title="Nhắc thêm gd hằng ngày"
+        android:icon="@drawable/ic_report"/>
+    <item android:id="@+id/navTrans"
+        android:title="Chuyển tiền tới ví khác"
+        android:icon="@drawable/ic_nav_trans"/>
+</menu>

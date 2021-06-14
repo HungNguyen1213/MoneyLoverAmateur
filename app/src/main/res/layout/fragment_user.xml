@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/userInfoView"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/login_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tai khoan"
+            android:id="@+id/tvUsername"
+            android:layout_marginTop="4dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyen Huy Hung"
+            android:id="@+id/tvFullName"
+            android:textSize="16sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#4CAF50"
+            android:text="Đăng xuất"
+            android:background="@drawable/btn_logout"
+            android:id="@+id/btnLogout"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:text="Giới thiệu"
+        android:gravity="center"
+        android:id="@+id/tvInfo"
+        android:layout_below="@id/userInfoView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInfo"
+        android:id="@+id/appInfoView"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/app_image"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingBottom="12dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Money Lover Amateur"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Phiên bản : 1.0.0"/>
+        </LinearLayout>
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/appInfoView"
+         android:paddingLeft="24dp"
+         android:paddingRight="16dp"
+         android:orientation="vertical">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="16sp"
+             android:text="Ứng dụng vẫn đang trong quá trình xây dựng và phát triển."/>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="16sp"
+             android:text="Nếu bạn có bất cứ ý kiến đóng góp nay cần sự trợ giúp từ chúng tôi xin vui lòng gửi email theo địa chỉ:"/>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="16sp"
+             android:gravity="center"
+             android:text="Gmail: hungnh99.ptit@gmail.com"/>
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="16sp"
+             android:layout_marginTop="16dp"
+             android:textColor="#4CAF50"
+             android:text="Gửi thư"
+             android:background="@drawable/btn_support"
+             android:id="@+id/btnSupport"/>
+     </LinearLayout>
+</RelativeLayout>

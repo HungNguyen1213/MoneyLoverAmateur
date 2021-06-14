@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navExchange"
+        android:icon="@drawable/ic_exchange"
+        android:title="Sổ giao dịch"/>
+    <item android:id="@+id/navReport"
+        android:icon="@drawable/ic_report"
+        android:title="Báo cáo"/>
+    <item android:id="@+id/navBudget"
+        android:icon="@drawable/ic_budget"
+        android:title="Lập ngân sách"/>
+    <item android:id="@+id/navUser"
+        android:icon="@drawable/ic_user"
+        android:title="Tài khoản"/>
+</menu>
